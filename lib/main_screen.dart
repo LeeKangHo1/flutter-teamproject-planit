@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:projectplanit/screens/sidedrawer.dart';
 
 import 'screens/calendar.dart';
 import 'screens/my_profile.dart';
@@ -24,6 +25,12 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: SideDrawer(),
+      appBar: AppBar(
+        leading: Icon(Icons.arrow_back_ios),
+        title: Text("Profile"),
+        centerTitle: true,
+      ),
       body: IndexedStack(
         index: selectedIndex, // 0번이 최초 화면, 화면 전환 시 숫자 변경
         children: [

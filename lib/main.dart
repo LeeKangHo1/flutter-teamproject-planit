@@ -12,7 +12,6 @@ class PlanItUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainScreen(),
-      // home: SideDrawer(),
     );
   }
 }
