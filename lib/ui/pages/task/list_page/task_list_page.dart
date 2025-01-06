@@ -2,19 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projectplanit/screens/sidedrawer.dart';
 
-import 'screens/calendar.dart';
-import 'screens/my_profile.dart';
-import 'screens/my_task.dart';
-import 'screens/side.dart';
+import '../../../../screens/calendar.dart';
+import '../../../../screens/my_profile.dart';
+import '../../../../screens/my_task.dart';
+import '../../../../screens/side.dart';
 
-class MainScreen extends StatefulWidget {
+class TaskListPage extends StatefulWidget {
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<TaskListPage> createState() => _TaskListPageState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _TaskListPageState extends State<TaskListPage> {
   // 1. 상태
-  int selectedIndex = 3;
+  int selectedIndex = 1;
 
   // 2. 행위, onTap보다 여기에 적는 것을 추천
   void onClickBottomNavigation(int value) {
@@ -47,6 +47,7 @@ class _MainScreenState extends State<MainScreen> {
             // value가 현재 index?
             onClickBottomNavigation(value);
           },
+          // 바텀 네비게이션 바 설정
           showSelectedLabels: true,
           showUnselectedLabels: true,
           type: BottomNavigationBarType.fixed,

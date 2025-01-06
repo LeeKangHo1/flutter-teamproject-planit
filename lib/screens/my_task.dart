@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projectplanit/components/checkbox.dart';
 
-import '../Components/round_border_text.dart';
-import '../components/expansion_panel_list.dart';
+import '../widgets/checkbox.dart';
+import '../widgets/expansion_panel_list.dart';
+import '../widgets/round_border_text.dart';
 
 // This is the type used by the popup menu below.
 enum SampleItem { itemOne, itemTwo, itemThree }
@@ -31,8 +31,6 @@ class _MyTaskState extends State<MyTask> {
     return Scaffold(
       body: ListView(
         children: [
-          Center(child: Text("MyTaskScreen")),
-          Divider(),
           Row(
             children: [
               // 수평 스크롤 카테고리

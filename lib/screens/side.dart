@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projectplanit/Components/round_border_text.dart';
+
+import '../widgets/round_border_text.dart';
 
 // 과제 없을 때 화면 임시로 여기에
 class Side extends StatelessWidget {

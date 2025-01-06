@@ -32,7 +32,7 @@ class ExpansionPanelListExample extends StatefulWidget {
 }
 
 class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample> {
-  final List<Item> _data = generateItems(4);
+  final List<Item> _data = generateItems(3);
 
   @override
   Widget build(BuildContext context) {

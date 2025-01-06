@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projectplanit/components/sortby.dart';
+
+import '../widgets/sortby.dart';
 
 class MyProfile extends StatelessWidget {
   @override
