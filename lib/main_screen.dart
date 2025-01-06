@@ -13,7 +13,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   // 1. 상태
-  int selectedIndex = 1;
+  int selectedIndex = 3;
 
   // 2. 행위, onTap보다 여기에 적는 것을 추천
   void onClickBottomNavigation(int value) {
