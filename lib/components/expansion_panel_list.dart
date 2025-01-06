@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'checkbox.dart';
+
 class Item {
   Item({
     required this.expandedValue,
@@ -30,7 +32,7 @@ class ExpansionPanelListExample extends StatefulWidget {
 }
 
 class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample> {
-  final List<Item> _data = generateItems(8);
+  final List<Item> _data = generateItems(4);
 
   @override
   Widget build(BuildContext context) {
@@ -56,15 +58,19 @@ class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample> {
             );
           },
           body: ListTile(
-              title: Text(item.expandedValue),
-              subtitle:
-                  const Text('To delete this panel, tap the trash can icon'),
-              trailing: const Icon(Icons.delete),
-              onTap: () {
-                setState(() {
-                  _data.removeWhere((Item currentItem) => item == currentItem);
-                });
-              }),
+            leading: CheckboxExample(),
+            title: Text(
+              "영어 단어 10개 외우기",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            subtitle: Row(
+              children: [
+                Text("01-05"),
+                Icon(Icons.alarm),
+              ],
+            ),
+            trailing: Icon(Icons.flag),
+          ),
           isExpanded: item.isExpanded,
         );
       }).toList(),

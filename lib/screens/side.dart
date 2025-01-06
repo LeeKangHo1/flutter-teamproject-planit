@@ -3,7 +3,7 @@ import 'package:projectplanit/Components/round_border_text.dart';
 
 // 과제 없을 때 화면 임시로 여기에
 class Side extends StatelessWidget {
-  final searchKeword = [
+  final categories = [
     "카테고리1",
     "카테고리2",
     "카테고리3",
@@ -26,11 +26,11 @@ class Side extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: searchKeword.length,
+                  itemCount: categories.length,
                   itemBuilder: (context, index) {
                     return Center(
                       child: RoundBorderText(
-                          title: searchKeword[index], position: index),
+                          title: categories[index], position: index),
                     );
                   },
                 ),
