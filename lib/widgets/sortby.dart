@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'checkbox.dart';
+import 'package:projectplanit/ui/pages/task/list_page/widgets/plan_list_body_checkbox.dart';
 
 class Sortby extends StatelessWidget {
   const Sortby({super.key});
@@ -22,15 +21,15 @@ class Sortby extends StatelessWidget {
         ),
         ListTile(
           // TODO: 여기 쓸 체크박스 따로 만들기
-          leading: CheckboxExample(),
+          leading: PlanListBodyCheckbox(),
           title: Text("마감 날짜 및 시간"),
         ),
         ListTile(
-          leading: CheckboxExample(),
+          leading: PlanListBodyCheckbox(),
           title: Text("작업 생성 시간(최신순 하위)"),
         ),
         ListTile(
-          leading: CheckboxExample(),
+          leading: PlanListBodyCheckbox(),
           title: Text("작업 생성 시간(최신순 상위)"),
         ),
         Row(

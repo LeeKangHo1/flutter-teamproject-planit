@@ -5,7 +5,7 @@ class SideDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400,
+      width: 300,
       color: Colors.white,
       child: Column(
         children: [

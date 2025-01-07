@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CheckboxExample extends StatefulWidget {
-  const CheckboxExample({super.key});
+class PlanListBodyCheckbox extends StatefulWidget {
+  const PlanListBodyCheckbox({super.key});
 
   @override
-  State<CheckboxExample> createState() => _CheckboxExampleState();
+  State<PlanListBodyCheckbox> createState() => _PlanListBodyCheckboxState();
 }
 
-class _CheckboxExampleState extends State<CheckboxExample> {
+class _PlanListBodyCheckboxState extends State<PlanListBodyCheckbox> {
   bool isChecked = false;
 
   @override
@@ -40,5 +40,6 @@ class _CheckboxExampleState extends State<CheckboxExample> {
         });
       },
     );
+    ;
   }
 }

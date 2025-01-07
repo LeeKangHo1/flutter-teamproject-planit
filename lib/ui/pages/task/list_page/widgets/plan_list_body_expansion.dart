@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'checkbox.dart';
+import 'package:projectplanit/ui/pages/task/list_page/widgets/plan_list_body_checkbox.dart';
 
 class Item {
   Item({
@@ -23,15 +22,14 @@ List<Item> generateItems(int numberOfItems) {
   });
 }
 
-class ExpansionPanelListExample extends StatefulWidget {
-  const ExpansionPanelListExample({super.key});
+class PlanListBodyExpansion extends StatefulWidget {
+  const PlanListBodyExpansion({super.key});
 
   @override
-  State<ExpansionPanelListExample> createState() =>
-      _ExpansionPanelListExampleState();
+  State<PlanListBodyExpansion> createState() => _PlanListBodyExpansionState();
 }
 
-class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample> {
+class _PlanListBodyExpansionState extends State<PlanListBodyExpansion> {
   final List<Item> _data = generateItems(3);
 
   @override
@@ -58,7 +56,7 @@ class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample> {
             );
           },
           body: ListTile(
-            leading: CheckboxExample(),
+            leading: PlanListBodyCheckbox(),
             title: Text(
               "영어 단어 10개 외우기",
               style: TextStyle(fontWeight: FontWeight.bold),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class RoundBorderText extends StatelessWidget {
-  RoundBorderText({Key? key, required this.title, required this.position})
+class PlanListBodyCategoryCircle extends StatelessWidget {
+  PlanListBodyCategoryCircle(
+      {Key? key, required this.title, required this.position})
       : super(key: key);
 
   final String title;

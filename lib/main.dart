@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ui/pages/task/list_page/task_list_page.dart';
+import 'ui/pages/task/list_page/plan_list_page.dart';
 
 void main() {
   runApp(PlanItUI());
@@ -11,7 +11,7 @@ class PlanItUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TaskListPage(),
+      home: PlanListPage(),
     );
   }
 }
